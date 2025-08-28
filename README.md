@@ -7,6 +7,7 @@ EC2上の3つのエンタープライズシステムのsystemd管理ファイル
 1. **WealthAI-CRM** (Port 8000) - 顧客管理システム
 2. **ProductMaster** (Port 8001) - 商品管理システム  
 3. **AIChat** (Port 8002) - AI対話システム
+4. **ProductMaster-MCP** (Port 8003) - MCPサーバー
 
 ## 📁 ファイル構成
 

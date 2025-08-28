@@ -1,0 +1,14 @@
+[Unit]
+Description=ProductMaster MCP Server
+After=network.target
+
+[Service]
+Type=simple
+User=ec2-user
+WorkingDirectory=/home/ec2-user/ProductMaster-MCP/server
+ExecStart=/usr/bin/python3 simple_http_mcp_8003.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
