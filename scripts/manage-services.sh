@@ -1,7 +1,7 @@
 #!/bin/bash
 # サービス管理スクリプト
 
-SERVICES=("wealthai-crm" "productmaster" "productmaster-mcp" "aichat")
+SERVICES=("wealthai-crm" "productmaster" "productmaster-mcp" "crm-mcp" "aichat" "database-mgmt")
 
 case "$1" in
     start)

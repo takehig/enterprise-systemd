@@ -1,0 +1,17 @@
+[Unit]
+Description=Database Management Service
+After=network.target
+
+[Service]
+Type=simple
+User=ec2-user
+Group=ec2-user
+WorkingDirectory=/home/ec2-user/Database
+ExecStart=/usr/bin/python3 -m uvicorn main:app --host 0.0.0.0 --port 8006
+Restart=always
+RestartSec=3
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

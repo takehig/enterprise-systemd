@@ -1,0 +1,17 @@
+[Unit]
+Description=CRM MCP Server
+After=network.target
+
+[Service]
+Type=simple
+User=ec2-user
+Group=ec2-user
+WorkingDirectory=/home/ec2-user/CRM-MCP
+ExecStart=/usr/bin/python3 crm_mcp_server.py
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
